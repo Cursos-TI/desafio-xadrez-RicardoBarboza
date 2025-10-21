@@ -4,14 +4,14 @@
 void mover_torre(int casas) {
     if (casas <= 0) return;
     printf("Direita\n");
-    mover_torre(casas - 1);
+    mover_torre(casas - 1); // proximo movimento
 }
 
 // Rainha: move para a esquerda
 void mover_rainha(int casas) {
     if (casas <= 0) return;
     printf("Esquerda\n");
-    mover_rainha(casas - 1);
+    mover_rainha(casas - 1); // proximo movimento
 }
 
 // Bispo: move diagonal a cima e a direita
@@ -30,7 +30,7 @@ int j;
     }
 
     // Chama o próximo movimento
-    mover_bispo(casas - 1);
+    mover_bispo(casas - 1); // proximo movimento
 }
 
 // Cavalo: move duas casas para cima e uma para a direita
