@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-// Função recursiva para a Torre: move para a direita
+// Torre: move para a direita
 void mover_torre(int casas) {
     if (casas <= 0) return;
     printf("Direita\n");
     mover_torre(casas - 1);
 }
 
-// Função recursiva para a Rainha: move para a esquerda
+// Rainha: move para a esquerda
 void mover_rainha(int casas) {
     if (casas <= 0) return;
     printf("Esquerda\n");
     mover_rainha(casas - 1);
 }
 
-// Função recursiva que simula o movimento do Bispo
+// Bispo: move diagonal a cima e a direita
 void mover_bispo(int casas) {
 int i;
 int j;
@@ -33,7 +33,7 @@ int j;
     mover_bispo(casas - 1);
 }
 
-// Função para o Cavalo com loops complexos (duas casas para cima e uma para a direita)
+// Cavalo: move duas casas para cima e uma para a direita
 void mover_cavalo(int movimentos) {
     int i;
     int j;
