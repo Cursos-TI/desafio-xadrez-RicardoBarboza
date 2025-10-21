@@ -33,7 +33,7 @@ int j;
     mover_bispo(casas - 1);
 }
 
-
+// Função para o Cavalo com loops complexos (duas casas para cima e uma para a direita)
 void mover_cavalo(int movimentos) {
     int i;
     int j;
